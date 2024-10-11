@@ -19,7 +19,7 @@ const DeleteBook = () => {
       .delete(`http://localhost:5555/books/${id}`)
       .then(() => {
         setLoading(false);
-        enqueueSnackbar('Book deleted successfully..', {variant: 'success'})
+        enqueueSnackbar('Book deleted successfully...', {variant: 'success'})
         navigate("/");
       })
       .catch((error) => {
